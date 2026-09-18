@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore Kenya - Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 TechStore Kenya</h1>
+
+        <a href="cart.html">Back to Cart</a>
+    </header>
+
+
+    <main>
+
+        <div class="checkout-container">
+
+            <h2>Checkout</h2>
+
+
+       
+
+            <div class="checkout-form">
+
+                <h3>Delivery Information</h3>
+
+                <label for="customerName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter your full name"
+                >
+
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="07XXXXXXXX"
+                >
+
+
+                <label for="address">
+                    Delivery Address
+                </label>
+
+                <textarea
+                    id="address"
+                    placeholder="Enter your delivery address"
+                ></textarea>
+
+            </div>
+
+
+           
+
+            <div class="order-summary">
+
+                <h3>Order Summary</h3>
+
+                <div id="orderItems"></div>
+
+                <hr>
+
+                <h2>
+                    Total: KSh
+                    <span id="checkoutTotal">0</span>
+                </h2>
+
+            </div>
+
+
+            <button id="placeOrderBtn">
+                Place Order
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>

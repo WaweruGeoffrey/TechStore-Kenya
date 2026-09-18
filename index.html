@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Kenya</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>TechStore Kenya</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              <li><a href="cart.html" id="cartCount">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1>Welcome to TechStore Kenya</h1>
+    <p>Your trusted online electronics shop</p>
+    <section class="featured-products">
+
+    <h2>Featured Products</h2>
+    <div class="search-container">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search for a product..."
+    >
+
+</div>
+<div class="category-buttons">
+    <button class="active" onclick="filterProducts('All')">All</button>
+    <button onclick="filterProducts('Phones')">Phones</button>
+    <button onclick="filterProducts('Laptops')">Laptops</button>
+    <button onclick="filterProducts('Gaming')">Gaming</button>
+    <button onclick="filterProducts('Audio')">Audio</button>
+</div>
+    <div class="products" id="productsContainer">
+
+    </div>
+
+</section>
+
+    </main>
+    <script src="products.js"></script>         
+<script src="app.js"></script>
+    
+</body>
+</html>
