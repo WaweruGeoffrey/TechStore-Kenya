@@ -1,88 +1,16 @@
 const products = [
-    {
-        id: 1,
-        name: "Samsung Galaxy A56",
-        category: "Phones",
-        price: 39999,
-        image: "Images/samsung galaxy A56.jpg"
-    },
-
-    {
-        id: 2,
-        name: "HP EliteBook",
-        category: "Laptops",
-        price: 74999,
-        image: "Images/laptop.jpg"
-    },
-
-    {
-        id: 3,
-        name: "Gaming Keyboard",
-        category: "Gaming",
-        price: 6500,
-        image: "Images/Gaming keybord.jpg"
-    },
-
-    {
-        id: 4,
-        name: "JBL Headphones",
-        category: "Audio",
-        price: 6999,
-        image:"Images/jbl-headphones.jpg"
-    },
-
-    {
-        id: 5,
-        name:"Samsung galaxy a06",
-        category: "Phones",
-        price:25000,
-        image:"Images/Samsung-galaxy a06.jpg"
-    },
-
-    {
-        id:6,
-        name:"Dell latitude",
-        category:"Laptops",
-        price:56000,
-        image:"Images/Dell-latitude.jpg"
-    },
-
-    {
-        id:7,
-        name:"Gaming mouse",
-        category:"Gaming",
-        price:3500,
-        image:"Images/Gaming-mouse.jpg"
-    },
-
-    {
-        id:8,
-        name:"wireless earbuds",
-        category:"Audio",
-        price:1500,
-        image:"Images/wireless-earbuds.jpg"
-    }
-
-
-
+    { id: 1, name: "Samsung Galaxy A56", category: "Phones", price: 39999, image: "Images/samsung galaxy A56.jpg", badge: "Popular", stock: 12, description: "A powerful Samsung smartphone with a premium display, excellent cameras and dependable all-day performance." },
+    { id: 2, name: "HP EliteBook", category: "Laptops", price: 74999, image: "Images/laptop.jpg", badge: "Featured", stock: 7, description: "A professional HP laptop suitable for school, business, programming and everyday productivity." },
+    { id: 3, name: "Gaming Keyboard", category: "Gaming", price: 6500, image: "Images/Gaming keybord.jpg", badge: "Gaming", stock: 18, description: "Responsive gaming keyboard designed for comfortable and accurate gameplay." },
+    { id: 4, name: "JBL Headphones", category: "Audio", price: 6999, image: "Images/jbl-headphones.jpg", badge: "Popular", stock: 15, description: "Enjoy immersive audio with comfortable JBL headphones for music, gaming and calls." },
+    { id: 5, name: "Samsung Galaxy A06", category: "Phones", price: 25000, image: "Images/Samsung-galaxy a06.jpg", badge: "New", stock: 20, description: "An affordable Samsung smartphone for everyday communication, entertainment and social media." },
+    { id: 6, name: "Dell Latitude", category: "Laptops", price: 56000, image: "Images/Dell-latitude.jpg", badge: "Business", stock: 9, description: "A reliable Dell business laptop for students, developers and office productivity." },
+    { id: 7, name: "Gaming Mouse", category: "Gaming", price: 3500, image: "Images/Gaming-mouse.jpg", badge: "Gaming", stock: 25, description: "Precision gaming mouse with a comfortable grip for fast and accurate control." },
+    { id: 8, name: "Wireless Earbuds", category: "Audio", price: 1500, image: "Images/wireless-earbuds.jpg", badge: "Deal", stock: 30, description: "Compact wireless earbuds for music, calls and everyday listening." },
+    { id: 9, name: "Wireless Mouse", category: "Accessories", price: 1800, image: "Images/wireless mouse.jpg", badge: "New", stock: 22, description: "A convenient wireless mouse for laptops, desktops and study setups." },
+    { id: 10, name: "Gaming Headset", category: "Gaming", price: 5500, image: "Images/gaming headset.jpg", badge: "Gaming", stock: 14, description: "Immersive gaming headset with a comfortable design for long gaming sessions." },
+    { id: 11, name: "Laptop Stand", category: "Accessories", price: 2800, image: "Images/Laptop-Stand.jpg", badge: "Popular", stock: 16, description: "Raise your laptop to a more comfortable viewing position for work and study." },
+    { id: 12, name: "USB-C Fast Charger", category: "Accessories", price: 2200, image: "Images/USB-C Fast Charger.jpg", badge: "Deal", stock: 28, description: "Compact fast charger for compatible smartphones and USB-C devices." },
+    { id: 13, name: "Smart Watch", category: "Wearables", price: 6500, image: "Images/Smart-Watch.jpg", badge: "New", stock: 11, description: "A modern smartwatch-style wearable for everyday notifications and activity tracking." },
+    { id: 14, name: "Portable Power Bank", category: "Accessories", price: 3200, image: "Images/Portable-Power-Bank.jpg", badge: "Popular", stock: 19, description: "Portable backup power for keeping your devices charged while travelling." }
 ];
-
-
-products.forEach(function(product){
-
-    productsContainer.innerHTML += `
-        <div class="card">
-
-            <img src="${product.image}" alt="${product.name}">
-
-            <h3>${product.name}</h3>
-
-            <p class="price">KSh ${product.price}</p>
-
-            <button>Add to Cart</button>
-
-        </div>
-    `;
-
-});
-console.log(products);
